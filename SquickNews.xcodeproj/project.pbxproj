@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DEBAA2302E6F052800C2BEDE /* LibraryUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEBAA22F2E6F052800C2BEDE /* LibraryUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		DEBA9FC22E6B64AB00C2BEDE /* SquickNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquickNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE99B6722E6F04F5000F0309 /* SquickNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquickNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DEBAA2312E6F05B000C2BEDE /* Exceptions for "SquickNews" folder in "SquickNews" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DEBA9FC12E6B64AB00C2BEDE /* SquickNews */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DEBA9FC42E6B64AB00C2BEDE /* SquickNews */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DEBAA2312E6F05B000C2BEDE /* Exceptions for "SquickNews" folder in "SquickNews" target */,
+			);
 			path = SquickNews;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBAA2302E6F052800C2BEDE /* LibraryUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,16 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				DEBA9FC42E6B64AB00C2BEDE /* SquickNews */,
-				DEBA9FC32E6B64AB00C2BEDE /* Products */,
+				DE99B6722E6F04F5000F0309 /* SquickNews.app */,
 			);
-			sourceTree = "<group>";
-		};
-		DEBA9FC32E6B64AB00C2BEDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DEBA9FC22E6B64AB00C2BEDE /* SquickNews.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +75,10 @@
 			);
 			name = SquickNews;
 			packageProductDependencies = (
+				DEBAA22F2E6F052800C2BEDE /* LibraryUI */,
 			);
 			productName = SquickNews;
-			productReference = DEBA9FC22E6B64AB00C2BEDE /* SquickNews.app */;
+			productReference = DE99B6722E6F04F5000F0309 /* SquickNews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,8 +105,11 @@
 			);
 			mainGroup = DEBA9FB92E6B64AB00C2BEDE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DEBAA22E2E6F052800C2BEDE /* XCLocalSwiftPackageReference "../LibraryUI" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DEBA9FC32E6B64AB00C2BEDE /* Products */;
+			productRefGroup = DEBA9FB92E6B64AB00C2BEDE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -127,6 +141,8 @@
 /* Begin XCBuildConfiguration section */
 		DEBA9FCB2E6B64AD00C2BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DEBA9FC42E6B64AB00C2BEDE /* SquickNews */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -191,6 +207,8 @@
 		};
 		DEBA9FCC2E6B64AD00C2BEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DEBA9FC42E6B64AB00C2BEDE /* SquickNews */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -248,6 +266,8 @@
 		};
 		DEBA9FCE2E6B64AD00C2BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DEBA9FC42E6B64AB00C2BEDE /* SquickNews */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -256,6 +276,9 @@
 				DEVELOPMENT_TEAM = 7P88L3VH56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SquickNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SquickNews;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -276,6 +299,8 @@
 		};
 		DEBA9FCF2E6B64AD00C2BEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DEBA9FC42E6B64AB00C2BEDE /* SquickNews */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,6 +309,9 @@
 				DEVELOPMENT_TEAM = 7P88L3VH56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SquickNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SquickNews;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +352,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DEBAA22E2E6F052800C2BEDE /* XCLocalSwiftPackageReference "../LibraryUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LibraryUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEBAA22F2E6F052800C2BEDE /* LibraryUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LibraryUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEBA9FBA2E6B64AB00C2BEDE /* Project object */;
 }

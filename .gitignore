@@ -1,0 +1,60 @@
+# ========================
+# Xcode
+# ========================
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+# ========================
+# SwiftPM
+# ========================
+.swiftpm/
+.build/
+
+# ========================
+# CocoaPods
+# ========================
+Pods/
+Podfile.lock
+
+# ========================
+# Carthage
+# ========================
+Carthage/Build/
+
+# ========================
+# Fastlane
+# ========================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# ========================
+# macOS
+# ========================
+.DS_Store
+*.swp
+*.swo
+
+# ========================
+# Secrets / Config
+# ========================
+# Ignore xcconfig locales
+*.xcconfig
+
+# ========================
+# Xcode project user settings
+# ========================
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcscmblueprint
+
+# ========================
+# Swift Package Manager resolved file
+# ========================
+Package.resolved
