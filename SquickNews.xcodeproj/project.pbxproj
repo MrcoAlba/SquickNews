@@ -10,7 +10,18 @@
 		DEBAA2302E6F052800C2BEDE /* LibraryUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEBAA22F2E6F052800C2BEDE /* LibraryUI */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DE7900222E6F2D54004F1363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEBA9FBA2E6B64AB00C2BEDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEBA9FC12E6B64AB00C2BEDE;
+			remoteInfo = SquickNews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DE79001E2E6F2D54004F1363 /* SquickNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquickNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99B6722E6F04F5000F0309 /* SquickNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquickNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -25,6 +36,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		DE79001F2E6F2D54004F1363 /* SquickNewsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SquickNewsTests;
+			sourceTree = "<group>";
+		};
 		DEBA9FC42E6B64AB00C2BEDE /* SquickNews */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -36,6 +52,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE79001B2E6F2D54004F1363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEBA9FBF2E6B64AB00C2BEDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,12 +75,37 @@
 			children = (
 				DEBA9FC42E6B64AB00C2BEDE /* SquickNews */,
 				DE99B6722E6F04F5000F0309 /* SquickNews.app */,
+				DE79001E2E6F2D54004F1363 /* SquickNewsTests.xctest */,
+				DE79001F2E6F2D54004F1363 /* SquickNewsTests */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DE79001D2E6F2D54004F1363 /* SquickNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7900262E6F2D54004F1363 /* Build configuration list for PBXNativeTarget "SquickNewsTests" */;
+			buildPhases = (
+				DE79001A2E6F2D54004F1363 /* Sources */,
+				DE79001B2E6F2D54004F1363 /* Frameworks */,
+				DE79001C2E6F2D54004F1363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7900232E6F2D54004F1363 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DE79001F2E6F2D54004F1363 /* SquickNewsTests */,
+			);
+			name = SquickNewsTests;
+			packageProductDependencies = (
+			);
+			productName = SquickNewsTests;
+			productReference = DE79001E2E6F2D54004F1363 /* SquickNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DEBA9FC12E6B64AB00C2BEDE /* SquickNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEBA9FCD2E6B64AD00C2BEDE /* Build configuration list for PBXNativeTarget "SquickNews" */;
@@ -91,6 +139,10 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					DE79001D2E6F2D54004F1363 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = DEBA9FC12E6B64AB00C2BEDE;
+					};
 					DEBA9FC12E6B64AB00C2BEDE = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -114,11 +166,19 @@
 			projectRoot = "";
 			targets = (
 				DEBA9FC12E6B64AB00C2BEDE /* SquickNews */,
+				DE79001D2E6F2D54004F1363 /* SquickNewsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DE79001C2E6F2D54004F1363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEBA9FC02E6B64AB00C2BEDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +189,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE79001A2E6F2D54004F1363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEBA9FBE2E6B64AB00C2BEDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,7 +205,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DE7900232E6F2D54004F1363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEBA9FC12E6B64AB00C2BEDE /* SquickNews */;
+			targetProxy = DE7900222E6F2D54004F1363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DE7900242E6F2D54004F1363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P88L3VH56;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrcoalba.SquickNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquickNews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SquickNews";
+			};
+			name = Debug;
+		};
+		DE7900252E6F2D54004F1363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P88L3VH56;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrcoalba.SquickNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquickNews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SquickNews";
+			};
+			name = Release;
+		};
 		DEBA9FCB2E6B64AD00C2BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = DEBA9FC42E6B64AB00C2BEDE /* SquickNews */;
@@ -333,6 +444,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE7900262E6F2D54004F1363 /* Build configuration list for PBXNativeTarget "SquickNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7900242E6F2D54004F1363 /* Debug */,
+				DE7900252E6F2D54004F1363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DEBA9FBD2E6B64AB00C2BEDE /* Build configuration list for PBXProject "SquickNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

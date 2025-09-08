@@ -1,6 +1,6 @@
 import Foundation
 
-final class JSONDecoderWrapper {
+class JSONDecoderWrapper {
     private let decoder: JSONDecoder
     
     init(decoder: JSONDecoder = JSONDecoder()) {
